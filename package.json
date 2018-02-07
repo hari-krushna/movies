@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Movies Application",
   "main": "index.js",
+  "homepage": "https://hari-krushna.github.io/movies",
   "scripts": {
     "dev": "webpack-dev-server",
     "prod": "npm run clean && NODE_ENV=production webpack -p",
-    "clean": "rimraf ./dist/*"
+    "clean": "rimraf ./dist/*",
+    "deploy" : "npm run prod && gh-pages -d dist"
   },
   "author": "Hari Krushna Kartan",
   "license": "MIT",
@@ -21,6 +23,7 @@
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^1.1.6",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "^2.30.1",
     "image-webpack-loader": "^4.0.0",
     "imports-loader": "^0.7.1",
